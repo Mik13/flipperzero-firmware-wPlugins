@@ -175,6 +175,11 @@ static void subghz_setting_load_default_region(
         "FM476",
         (uint8_t*)furi_hal_subghz_preset_2fsk_dev47_6khz_async_regs,
         furi_hal_subghz_preset_2fsk_async_patable);
+    subghz_setting_load_default_preset(
+        instance,
+        "GFSK9",
+        (uint8_t*)furi_hal_subghz_preset_gfsk_9_99kb_async_regs,
+        furi_hal_subghz_preset_gfsk_async_patable);
 }
 
 // Region check removed

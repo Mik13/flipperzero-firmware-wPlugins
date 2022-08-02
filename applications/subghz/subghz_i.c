@@ -41,6 +41,8 @@ bool subghz_set_preset(SubGhz* subghz, const char* preset) {
         string_set(subghz->txrx->preset->name, "FM238");
     } else if(!strcmp(preset, "FuriHalSubGhzPreset2FSKDev476Async")) {
         string_set(subghz->txrx->preset->name, "FM476");
+    } else if(!strcmp(preset, "FuriHalSubGhzPresetGFSK9_99KbAsync")) {
+        string_set(subghz->txrx->preset->name, "GFSK9");
     } else if(!strcmp(preset, "FuriHalSubGhzPresetCustom")) {
         string_set(subghz->txrx->preset->name, "CUSTOM");
     } else {

@@ -14,6 +14,8 @@ void subghz_block_generic_get_preset_name(const char* preset_name, string_t pres
         preset_name_temp = "FuriHalSubGhzPreset2FSKDev238Async";
     } else if(!strcmp(preset_name, "FM476")) {
         preset_name_temp = "FuriHalSubGhzPreset2FSKDev476Async";
+    } else if(!strcmp(preset_name, "GFSK9")) {
+        preset_name_temp = "FuriHalSubGhzPresetGFSK9_99KbAsync";
     } else {
         preset_name_temp = "FuriHalSubGhzPresetCustom";
     }
